@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TaskMaster</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<header class="navbar">
+  <div class="nav-left">
+    <span class="icon primary">✔</span>
+    <h1>TaskMaster</h1>
+  </div>
+</header>
+
+<main class="container">
+  <section class="heading">
+    <h2>My Tasks</h2>
+    <p>Keep track of your daily goals and stay productive.</p>
+  </section>
+
+  <!-- Add Task -->
+  <section class="add-task">
+    <input type="text"  class = "todo-input" placeholder="What needs to be done?" />
+    <button class="add-button">Add Task</button>
+  </section>
+
+  <!-- Filters -->
+  <section class="filters">
+    <label><input type="radio" name="filter" checked> All</label>
+    <label><input type="radio" name="filter"> Active</label>
+    <label><input type="radio" name="filter"> Completed</label>
+  </section>
+
+  <!-- Task List -->
+  <ul class="task-list">
+  
+  </ul>
+
+  <footer class="stats">
+  <p id="active-count">0 active tasks</p>
+  <p id="completed-percent">0% completed today</p>
+</footer>
+   
+</main>
+</body>
+<script type="module" src="script.js"></script>
+</html>
